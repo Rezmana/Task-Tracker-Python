@@ -10,7 +10,7 @@ def add_task(task):
     loadedtasks.append(task_create)
     save_tasks(loadedtasks)
     
-def completed_task():
+def completed_all_task():
     loadedtasks = load_tasks()
     for task in loadedtasks:
         task["completed"] = True
